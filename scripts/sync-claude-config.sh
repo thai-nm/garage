@@ -14,11 +14,15 @@ else
   git clone "$REPO_URL" "$REPO_DIR"
 fi
 
-echo "Populating Claude Code user config in $CLAUDE_DIR..."
+echo "Populating Claude Code user config & skills in $CLAUDE_DIR..."
 mkdir -p "$CLAUDE_DIR"
 cp "$REPO_DIR/.claude/settings.json" "$CLAUDE_DIR/settings.json"
 cp "$REPO_DIR/.claude/CLAUDE.md" "$CLAUDE_DIR/CLAUDE.md"
 
+mkdir -p "$CLAUDE_DIR/skills"
+cp -r "$REPO_DIR/.claude/skills/." "$CLAUDE_DIR/skills/"
+
 echo "Done. Updated:"
 echo "  $CLAUDE_DIR/settings.json"
 echo "  $CLAUDE_DIR/CLAUDE.md"
+echo "  $CLAUDE_DIR/skills/ (added/updated from repo, existing extras kept)"
