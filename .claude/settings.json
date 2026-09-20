@@ -19,5 +19,8 @@
       "Bash(*kubectl *)",
       "Bash(ssh *)"
     ]
+  },
+  "enabledPlugins": {
+    "feature-dev@claude-plugins-official": true
   }
 }
