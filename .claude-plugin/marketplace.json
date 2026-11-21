@@ -1,0 +1,11 @@
+{
+  "name": "garage",
+  "owner": { "name": "Thai Nguyen" },
+  "plugins": [
+    {
+      "name": "task-buddy",
+      "source": "./.claude/plugins/task-buddy",
+      "description": "A tiny animated Claude above the prompt that acts out the task at hand"
+    }
+  ]
+}

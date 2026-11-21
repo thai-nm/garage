@@ -1,0 +1,8 @@
+{
+  "name": "task-buddy",
+  "version": "0.1.0",
+  "description": "A tiny animated Claude above the prompt that acts out the task at hand",
+  "author": { "name": "Thai Nguyen" },
+  "license": "MIT",
+  "types": "./types/index.d.ts"
+}
